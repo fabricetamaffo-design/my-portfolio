@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fabrice Tamaffo - software engineering student and junior developer portfolio." />
+  <meta name="theme-color" content="#f4f7fb" />
+  <title>Fabrice Tamaffo | Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skipLink">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#home" class="brand">Fabrice <span>Tamaffo</span></a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav id="nav-menu" class="nav-menu" aria-label="Main navigation">
+        <a href="#about" data-i18n="navAbout">About</a>
+        <a href="#projects" data-i18n="navProjects">Projects</a>
+        <a href="#experience" data-i18n="navExperience">Experience</a>
+        <a href="#education" data-i18n="navEducation">Education</a>
+        <a href="#tools" data-i18n="navTools">Tools</a>
+        <a href="#contact" data-i18n="navContact">Contact</a>
+
+        <div class="language-switcher" role="group" aria-label="Language switcher">
+          <button type="button" class="lang-btn active" data-lang="en" aria-pressed="true">EN</button>
+          <span>|</span>
+          <button type="button" class="lang-btn" data-lang="fr" aria-pressed="false">FR</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-text reveal">
+          <p class="availability" data-i18n="availability">OPEN TO LEARNING & COLLABORATION</p>
+          <p class="eyebrow" data-i18n="heroEyebrow">Software Engineering Student / Junior Developer</p>
+          <h1 data-i18n="heroTitle">Building simple and useful digital solutions.</h1>
+          <p class="hero-description" data-i18n="heroDescription">
+            I am Fabrice Tamaffo, a software engineering student and junior developer with an interest in web development and practical software solutions.
+          </p>
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary" data-i18n="heroBtnProjects">View Projects</a>
+            <a href="#contact" class="btn btn-secondary" data-i18n="heroBtnContact">Contact Me</a><a href="assets/fabrice-cv.pdf" class="btn btn-cv" download data-i18n="downloadCV">Download CV ↓</a>
+          </div>
+        </div>
+
+        <div class="hero-photo-card reveal">
+          <div class="photo-ring">
+            <img src="fabrice-profile.png" alt="Fabrice Tamaffo" data-i18n-alt="photoAlt" class="profile-photo" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">01</p>
+          <h2 data-i18n="aboutTitle">About Me</h2>
+        </div>
+
+        <div class="card reveal">
+          <p data-i18n="aboutText">
+            I am Fabrice Tamaffo, a software engineering student and junior developer. I enjoy building well-structured digital solutions and learning through real projects. My interests include software development, web applications, and user-focused design. I am currently pursuing a Bachelor's degree in Computer Science at PKFokam Institute of Excellence.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">02</p>
+          <h2 data-i18n="projectsTitle">Projects</h2>
+        </div>
+
+        <div class="cards-grid project-grid">
+          <article class="card project-card reveal">
+            <p class="project-label">Intelligentsia S.A.</p>
+            <h3 data-i18n="project1Title">Design and Implementation of a Configurable Validation Workflow within the EHR Platform</h3>
+         
+            <p data-i18n="project1Desc">
+              This project focused on the design and integration of a configurable validation workflow within the E-Human Resources (EHR) platform. The objective was to support a more flexible validation process that can adapt to different approval needs.
+            </p>
+          </article>
+
+          <article class="card project-card reveal">
+            <p class="project-label">LandVerifyCM</p>
+            <h3 data-i18n="project2Title">LandVerifyCM: Land Verification Portal</h3>
+            <p data-i18n="project2Desc">
+              LandVerifyCM is a secure, centralized web platform designed to combat land fraud in Cameroon. It enables citizens, buyers, and legal professionals to verify land ownership, detect duplicate or suspicious title records, and view GPS-based parcel locations through a bilingual English/French interface.
+            </p>
+          </article>
+
+          <article class="card project-card reveal">
+            <p class="project-label" data-i18n="project3Label">Institutional Web Project</p>
+            <h3 data-i18n="project3Title">Timetable Management System</h3>
+            <p data-i18n="project3Desc">
+              We created a responsive website for managing timetables within an institution. The website was built to help organize institutional schedules.
+            </p>
+          </article>
+        </div>
+         
+          <div class="cards-grid project-grid secondary-projects">
+            <article class="card project-card reveal"><p class="project-label">HTML · CSS · JavaScript · Database</p><h3 data-i18n="project4Title">Guest House Website</h3><p data-i18n="project4Desc">Developed a website for a guest house with information on rooms and services, a location map, and database integration to manage reservations and guest information.</p></article>
+            
+            <article class="card project-card reveal"><p class="project-label">Python</p><h3 data-i18n="project6Title">Tic-Tac-Toe Game</h3><p data-i18n="project6Desc">Built a Tic-Tac-Toe game in Python, applying fundamental programming concepts and game logic.</p></article>
+          </div>
+    </section>
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">03</p>
+          <h2 data-i18n="experienceTitle">Experience</h2>
+        </div>
+
+        <div class="card reveal">
+          <h3 data-i18n="experienceRole">Software Development Intern</h3>
+          <p class="meta-line"><strong>Intelligentsia S.A.</strong> · <span data-i18n="experiencePeriod">July 1 – August 31, 2026</span></p>
+          <p class="meta-line" data-i18n="experienceDepartment">Software Solutions Department</p>
+          <p data-i18n="experienceDesc">
+            From July 1st to August 31st, I completed an internship at Intelligentsia S.A. I was assigned to the Software Solutions Department, where I worked on the design and integration of a configurable validation workflow in the E-Human Resources (EHR) platform.
+          </p>
+        </div>
+        <div class="card reveal experience-extra"><h3 data-i18n="experience2Role">Web Development &amp; Digitalization</h3><p class="meta-line"><strong>Chic Apartment · Yaoundé, Odza</strong> · <span data-i18n="experience2Period">June – July 2025</span></p><p data-i18n="experience2Desc">Designed and developed a responsive guest house website with HTML, CSS, and JavaScript. Presented room information, availability, and services online and included maps and directions to help customers find the property.</p></div>
+      </div>
+    </section>
+
+    <section class="section" id="education">
+      <div class="container"><div class="section-header reveal"><p class="section-tag">04</p><h2 data-i18n="educationTitle">Education</h2></div>
+      <div class="education-grid">
+        <div class="card reveal"><p class="project-label" data-i18n="eduDegree">Bachelor’s in Computer Science</p><h3>PKFokam Institute of Excellence</h3><p class="meta-line">Yaoundé · <span data-i18n="eduDegreeDate">September 2023 – Present</span></p></div>
+        <div class="card reveal"><p class="project-label" data-i18n="eduA">GCE Advanced Level (Science)</p><h3>Saint Benedict Catholic College</h3><p class="meta-line">Yaoundé, Mvolyé · 2022–2023</p></div>
+        <div class="card reveal"><p class="project-label" data-i18n="eduO">GCE Ordinary Level (Science)</p><h3>Saint Benedict Catholic College</h3><p class="meta-line">Yaoundé, Mvolyé · 2016–2021</p></div>
+      </div></div>
+    </section>
+
+    <section class="section" id="tools">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">05</p>
+          <h2 data-i18n="toolsTitle">Tools & Technologies</h2>
+        </div>
+
+        <div class="tools-grid reveal">
+          <div class="tool-chip">Spring Boot</div>
+          <div class="tool-chip">AngularJS</div>
+          <div class="tool-chip">Spring Tool Suite</div>
+          <div class="tool-chip">Figma</div>
+          <div class="tool-chip">Git &amp; GitHub</div>
+          <div class="tool-chip">Visual Studio Code</div>
+          <div class="tool-chip">NetBeans</div>
+          <div class="tool-chip">Scene Builder</div><div class="tool-chip">Java</div><div class="tool-chip">Python</div><div class="tool-chip">C</div><div class="tool-chip">HTML / CSS / JavaScript</div><div class="tool-chip">MySQL</div><div class="tool-chip">XAMPP</div><div class="tool-chip">Dev-C++</div><div class="tool-chip">Microsoft Office</div>
+        </div>
+        <div class="languages-line reveal"><strong data-i18n="languagesTitle">Languages</strong><span data-i18n="languagesValue">French (native) · English (advanced)</span></div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <p class="section-tag">06</p>
+          <h2 data-i18n="contactTitle">Contact</h2>
+        </div>
+
+        <div class="card contact-card reveal">
+          <p data-i18n="contactText">
+            Feel free to contact me for opportunities, collaborations, or professional discussions.
+          </p>
+
+          <div class="contact-list">
+            <a href="mailto:fabricetamaffo@gmail.com"><span data-i18n="contactEmail">Email</span>: fabricetamaffo@gmail.com</a>
+            <a href="tel:+237698685818"><span data-i18n="contactPhone">Phone</span>: +237 698 685 818</a>
+            <a href="https://www.linkedin.com/in/fabrice-tamaffo-01662a3ab" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="currentYear"></span> Fabrice Tamaffo</p>
+      <a href="#home" data-i18n="backToTop">Back to top</a>
+    </div>
+  </footer>
+</body>
+</html>
